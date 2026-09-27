@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Modèle de portfolio personnel à personnaliser — une démo statique en français."
+    />
+    <meta name="theme-color" content="#11131b" />
+    <title>[Votre nom] — Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#contenu">Aller au contenu principal</a>
+
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="#accueil" aria-label="Accueil — portfolio">
+          <span class="brand-mark" aria-hidden="true">P.</span>
+          <span>Portfolio<span class="brand-period">.</span></span>
+        </a>
+
+        <button
+          class="menu-toggle js-only"
+          type="button"
+          aria-expanded="false"
+          aria-controls="navigation-principale"
+        >
+          <span class="menu-toggle-label">Menu</span>
+          <span class="menu-icon" aria-hidden="true"><i></i><i></i></span>
+        </button>
+
+        <nav
+          class="site-nav"
+          id="navigation-principale"
+          aria-label="Navigation principale"
+        >
+          <a href="#apropos">À propos</a>
+          <a href="#competences">Compétences</a>
+          <a href="#parcours">Parcours</a>
+          <a href="#projets">Projets</a>
+          <a class="nav-contact" href="#contact">Contact <span aria-hidden="true">↗</span></a>
+        </nav>
+
+        <button class="theme-toggle js-only" type="button" aria-label="Changer de thème">
+          <span class="theme-icon" aria-hidden="true">◐</span>
+          <span class="theme-label">Thème clair</span>
+        </button>
+      </div>
+    </header>
+
+    <main id="contenu">
+      <section class="hero section-shell" id="accueil" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Portfolio — démo à personnaliser</p>
+          <h1 id="hero-title">Bonjour, moi c’est <span class="accent" id="hero-name">[Votre nom]</span>.</h1>
+          <p class="hero-role" id="hero-role">[Votre rôle ou domaine d’activité]</p>
+          <p class="hero-intro" id="hero-intro">
+            Je conçois des expériences utiles, accessibles et soignées. Ici, vous
+            trouverez un aperçu de mon parcours, de mes compétences et de projets
+            qui me tiennent à cœur.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projets">Découvrir mes projets <span aria-hidden="true">↘</span></a>
+            <a class="button button-quiet" href="#contact">Me contacter <span aria-hidden="true">↗</span></a>
+          </div>
+          <p class="placeholder-hint">Texte d’exemple — remplacez-le par votre présentation.</p>
+        </div>
+
+        <div class="hero-art" aria-hidden="true">
+          <div class="art-orbit orbit-one"></div>
+          <div class="art-orbit orbit-two"></div>
+          <div class="art-card">
+            <span class="art-card-top"><span>APERÇU DE PROFIL</span><span>✳</span></span>
+            <span class="art-monogram" aria-hidden="true">[V]</span>
+            <span class="art-card-name" id="art-card-name">[Votre nom]</span>
+            <span class="art-card-role" id="art-card-role">[Votre spécialité]</span>
+            <span class="art-card-line"></span>
+            <span class="art-card-tags"><i>[Curiosité]</i><i>[Créativité]</i></span>
+          </div>
+          <span class="art-spark spark-one" aria-hidden="true">✳</span>
+          <span class="art-spark spark-two" aria-hidden="true">✦</span>
+          <span class="art-caption">Une idée à la fois.</span>
+        </div>
+        <a class="scroll-cue" href="#apropos"><span aria-hidden="true">↓</span> Faire défiler</a>
+      </section>
+
+      <section class="section-shell about-section" id="apropos" aria-labelledby="about-title">
+        <div class="section-heading">
+          <p class="eyebrow">01 / Quelques mots</p>
+          <h2 id="about-title">À propos <span class="accent">de moi</span></h2>
+        </div>
+        <div class="about-layout">
+          <div class="about-lead">
+            <p class="large-copy" id="about-tagline">
+              J’aime transformer les idées en réalisations concrètes, avec attention
+              aux détails et aux personnes qui les utilisent.
+            </p>
+            <p class="placeholder-hint">Présentation fictive : adaptez le texte à votre histoire.</p>
+          </div>
+          <div class="about-details">
+            <p id="about-copy">
+              Actuellement en <strong>[Votre formation ou situation]</strong>, je
+              m’intéresse particulièrement à <strong>[Vos sujets de prédilection]</strong>.
+              À travers mes projets, je cherche à apprendre, collaborer et créer un
+              impact positif à mon échelle.
+            </p>
+            <div class="fact-row">
+              <span class="fact-label">Basé·e à</span>
+              <span id="person-location">[Votre ville]</span>
+              <span class="fact-label">Disponible pour</span>
+              <span id="person-availability">[Stage, alternance, missions…]</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-shell skills-section" id="competences" aria-labelledby="skills-title">
+        <div class="section-heading section-heading-split">
+          <div>
+            <p class="eyebrow">02 / Ma boîte à outils</p>
+            <h2 id="skills-title">Compétences <span class="accent">& curiosité</span></h2>
+          </div>
+          <p class="section-aside">Des domaines que je pratique, explore et fais évoluer.</p>
+        </div>
+        <div class="skills-grid" id="skills-grid">
+          <article class="skill-card">
+            <span class="card-index">01</span>
+            <h3>[Domaine de compétence]</h3>
+            <p>[Quelques mots sur cette compétence]</p>
+            <ul class="tag-list"><li>[Outil ou méthode]</li><li>[Outil ou méthode]</li></ul>
+          </article>
+          <article class="skill-card">
+            <span class="card-index">02</span>
+            <h3>[Domaine de compétence]</h3>
+            <p>[Quelques mots sur cette compétence]</p>
+            <ul class="tag-list"><li>[Outil ou méthode]</li><li>[Outil ou méthode]</li></ul>
+          </article>
+          <article class="skill-card">
+            <span class="card-index">03</span>
+            <h3>[Domaine de compétence]</h3>
+            <p>[Quelques mots sur cette compétence]</p>
+            <ul class="tag-list"><li>[Outil ou méthode]</li><li>[Outil ou méthode]</li></ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-shell journey-section" id="parcours" aria-labelledby="journey-title">
+        <div class="section-heading">
+          <p class="eyebrow">03 / Le fil de mon parcours</p>
+          <h2 id="journey-title">Études & <span class="accent">expériences</span></h2>
+        </div>
+        <div class="timeline" id="timeline">
+          <article class="timeline-item">
+            <p class="timeline-date">[Année — aujourd’hui]</p>
+            <div class="timeline-content">
+              <h3>[Formation ou expérience]</h3>
+              <p class="timeline-place">[Établissement ou organisation]</p>
+              <p>[Une phrase sur ce que vous apprenez ou apportez.]</p>
+            </div>
+            <span class="timeline-marker" aria-hidden="true"></span>
+          </article>
+          <article class="timeline-item">
+            <p class="timeline-date">[Année — année]</p>
+            <div class="timeline-content">
+              <h3>[Formation ou expérience précédente]</h3>
+              <p class="timeline-place">[Établissement ou organisation]</p>
+              <p>[Une réalisation ou un apprentissage à mettre en avant.]</p>
+            </div>
+            <span class="timeline-marker" aria-hidden="true"></span>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-shell projects-section" id="projets" aria-labelledby="projects-title">
+        <div class="section-heading section-heading-split">
+          <div>
+            <p class="eyebrow">04 / Sélection de travaux</p>
+            <h2 id="projects-title">Projets <span class="accent">choisis</span></h2>
+          </div>
+          <p class="section-aside">Des exemples de présentation — remplacez-les par vos réalisations.</p>
+        </div>
+        <div class="projects-grid" id="projects-grid">
+          <article class="project-card">
+            <div class="project-art project-art-one" aria-hidden="true"><span>01</span><i>✳</i></div>
+            <div class="project-content">
+              <p class="project-meta">[Année] <span>•</span> Projet exemple</p>
+              <h3>[Nom de votre projet]</h3>
+              <p>[Décrivez le besoin, votre démarche et le résultat en quelques lignes.]</p>
+              <ul class="tag-list"><li>[Compétence]</li><li>[Outil]</li></ul>
+              <span class="placeholder-link">Lien de démonstration à ajouter</span>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-art project-art-two" aria-hidden="true"><span>02</span><i>◌</i></div>
+            <div class="project-content">
+              <p class="project-meta">[Année] <span>•</span> Projet exemple</p>
+              <h3>[Nom de votre projet]</h3>
+              <p>[Présentez votre contribution et ce que vous avez appris.]</p>
+              <ul class="tag-list"><li>[Compétence]</li><li>[Outil]</li></ul>
+              <span class="placeholder-link">Lien de démonstration à ajouter</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-shell beyond-section" aria-labelledby="beyond-title">
+        <div class="beyond-card">
+          <div>
+            <p class="eyebrow">05 / En dehors des projets</p>
+            <h2 id="beyond-title">Ce qui nourrit <span class="accent">ma curiosité</span></h2>
+          </div>
+          <p>
+            [Un engagement, une passion ou un centre d’intérêt] m’aide à prendre du
+            recul, découvrir d’autres perspectives et garder l’envie d’apprendre.
+          </p>
+          <span class="beyond-note">À vous de raconter ce qui vous inspire ↗</span>
+        </div>
+      </section>
+
+      <section class="section-shell contact-section" id="contact" aria-labelledby="contact-title">
+        <p class="eyebrow">06 / Et maintenant ?</p>
+        <h2 id="contact-title">Une idée en tête ?<br /><span class="accent">Parlons-en.</span></h2>
+        <p class="contact-intro">
+          Un projet, une opportunité ou simplement envie d’échanger ? Je serais
+          ravi·e d’en discuter avec vous.
+        </p>
+        <a class="button button-primary contact-button" href="#contact-details">Me contacter <span aria-hidden="true">↗</span></a>
+        <div class="contact-details" id="contact-details">
+          <div>
+            <span class="fact-label">E-mail</span>
+            <span id="contact-email">[Votre adresse e-mail]</span>
+          </div>
+          <div>
+            <span class="fact-label">Réseaux</span>
+            <div class="social-links" id="social-links">
+              <span class="placeholder-link">LinkedIn — lien à ajouter</span>
+              <span class="placeholder-link">GitHub — lien à ajouter</span>
+            </div>
+          </div>
+        </div>
+        <div id="cv-container"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand footer-brand" href="#accueil"><span class="brand-mark" aria-hidden="true">P.</span><span>Portfolio<span class="brand-period">.</span></span></a>
+      <p>Modèle de démonstration à personnaliser · Fait avec soin.</p>
+      <a class="back-to-top" href="#accueil">Retour en haut <span aria-hidden="true">↑</span></a>
+    </footer>
+  </body>
+</html>
